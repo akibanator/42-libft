@@ -6,7 +6,7 @@
 /*   By: akenji-a <akenji-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 11:41:50 by akenji-a          #+#    #+#             */
-/*   Updated: 2021/06/27 15:24:35 by akenji-a         ###   ########.fr       */
+/*   Updated: 2021/06/27 16:23:58 by akenji-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,8 @@ char	**ft_split(const char *s, char c);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strdup(const char *s);
 char	*ft_strjoin(char const *s1, char const *s2);
-size_t	ft_strlcat(char *dest, const char *src, size_t destLen);
-size_t	ft_strlcpy(char *dest, const char *src, size_t destLen);
+size_t	ft_strlcat(char *dst, const char *src, size_t n);
+size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
