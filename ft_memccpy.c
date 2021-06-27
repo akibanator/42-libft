@@ -6,7 +6,7 @@
 /*   By: akenji-a <akenji-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/08 14:14:14 by akenji-a          #+#    #+#             */
-/*   Updated: 2021/06/27 16:03:35 by akenji-a         ###   ########.fr       */
+/*   Updated: 2021/06/27 16:29:07 by akenji-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ void	*ft_memccpy (void *dest, const void *src, int c, size_t len)
 		}
 		i++;
 	}
-	return (dest);
+	return (0);
 }
