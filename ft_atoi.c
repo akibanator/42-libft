@@ -6,33 +6,40 @@
 /*   By: akenji-a <akenji-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/13 21:23:24 by akenji-a          #+#    #+#             */
-/*   Updated: 2021/06/27 14:33:01 by akenji-a         ###   ########.fr       */
+/*   Updated: 2021/06/27 15:54:42 by akenji-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+static int	ft_isspace(int c)
+{
+	if (c == ' ' || c == '\n' || c == '\t' || c == '\r'
+		|| c == '\f' || c == '\v')
+		return (1);
+	return (0);
+}
+
+int	ft_atoi(const char *nptr)
 {
 	int	num;
 	int	sign;
 
+	while ((ft_isspace(*nptr)))
+		nptr++;
 	sign = 1;
-	num = 0;
-	while (*str == ' ' || *str == '\f' || *str == '\n'
-		|| *str == '\r' || *str == '\t' || *str == '\v')
-		str++;
-	if (*str == '+' || *str == '-')
+	if (*nptr == '+' || *nptr == '-')
 	{
-		if (*str == '-')
+		if (*nptr == '-')
 			sign = -1;
-		str++;
+		nptr++;
 	}
-	while (ft_isdigit(*str))
+	num = 0;
+	while ((ft_isdigit(*nptr)))
 	{
 		num *= 10;
-		num += sign * (*str - '0');
-		str++;
+		num += sign * (*nptr - '0');
+		nptr++;
 	}
 	return (num);
 }
