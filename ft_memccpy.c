@@ -6,7 +6,7 @@
 /*   By: akenji-a <akenji-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/08 14:14:14 by akenji-a          #+#    #+#             */
-/*   Updated: 2021/06/09 12:17:31 by akenji-a         ###   ########.fr       */
+/*   Updated: 2021/06/27 16:03:35 by akenji-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memccpy (void *dest, const void *src, int c, size_t len)
 	size_t	i;
 
 	i = 0;
+	if (!dest && !src)
+		return (0);
 	while (i < len)
 	{
 		if (c != ((unsigned char *)src)[i])
