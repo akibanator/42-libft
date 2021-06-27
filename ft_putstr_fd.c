@@ -1,20 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akenji-a <akenji-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/13 18:45:44 by akenji-a          #+#    #+#             */
-/*   Updated: 2021/06/27 14:47:11 by akenji-a         ###   ########.fr       */
+/*   Created: 2021/06/14 03:04:36 by akenji-a          #+#    #+#             */
+/*   Updated: 2021/06/27 14:41:51 by akenji-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+void	ft_putstr_fd(char *s, int fd)
 {
-	if (c >= '0' && c <= 9)
-		return (1);
-	return (0);
+	int	i;
+
+	i = 0;
+	if (!s)
+		return (0);
+	while (s[i])
+	{
+		ft_putchar_fd(s[i], fd);
+		i++;
+	}
 }

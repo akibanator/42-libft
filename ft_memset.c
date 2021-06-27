@@ -6,7 +6,7 @@
 /*   By: akenji-a <akenji-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 11:26:49 by akenji-a          #+#    #+#             */
-/*   Updated: 2021/06/06 03:49:55 by akenji-a         ###   ########.fr       */
+/*   Updated: 2021/06/07 11:31:59 by akenji-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *str, int c, size_t len)
 {
-	size_t cont;
+	size_t	cont;
 
 	cont = 0;
 	while (cont < len)
@@ -22,5 +22,5 @@ void	*ft_memset(void *str, int c, size_t len)
 		((unsigned char *)str)[cont] = c;
 		cont++;
 	}
-	return str;
+	return (str);
 }

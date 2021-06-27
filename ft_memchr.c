@@ -1,19 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akenji-a <akenji-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/04 16:04:20 by akenji-a          #+#    #+#             */
-/*   Updated: 2021/06/04 16:07:08 by akenji-a         ###   ########.fr       */
+/*   Created: 2021/06/09 12:14:16 by akenji-a          #+#    #+#             */
+/*   Updated: 2021/06/27 14:37:25 by akenji-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-int	main(void)
+void	*ft_memchr(const void *str, int c, size_t len)
 {
-	write(1, "c", 1);
+	size_t	i;
+
+	i = 0;
+	while (i < len)
+	{
+		if (((unsigned char *)str)[i] == ((unsigned char)c))
+			return ((void *)str + i);
+		else
+			i++;
+	}
 	return (0);
 }
