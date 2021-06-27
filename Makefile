@@ -6,11 +6,11 @@
 #    By: akenji-a <akenji-a@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/28 11:59:00 by akenji-a          #+#    #+#              #
-#    Updated: 2021/06/27 14:58:53 by akenji-a         ###   ########.fr        #
+#    Updated: 2021/06/27 15:41:42 by akenji-a         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-PROJ_NAME=		libft.a
+NAME=		libft.a
 
 CC=				gcc
 
@@ -62,11 +62,11 @@ C_SOURCE=		ft_atoi.c\
 
 OBJS=			$(C_SOURCE:.c=.o)
 
-all:			$(PROJ_NAME)
+all:			$(NAME)
 
-$(PROJ_NAME):	$(OBJS) $(H_SOURCE)
-				$(LIB1) $(PROJ_NAME) $(OBJS)
-				$(LIB2) $(PROJ_NAME)
+$(NAME):	$(OBJS) $(H_SOURCE)
+				$(LIB1) $(NAME) $(OBJS)
+				$(LIB2) $(NAME)
 
 .c.o:			$(CC) $(CC_FLAGS) -I$(H_SOURCE) -c $< -o $(<:.c=.o)
 
@@ -74,7 +74,7 @@ clean:
 				$(RM) $(OBJS)
 
 fclean:			clean
-				$(RM) $(PROJ_NAME)
+				$(RM) $(NAME)
 
 re:				fclean all
 
