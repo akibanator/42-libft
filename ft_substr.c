@@ -6,13 +6,12 @@
 /*   By: akenji-a <akenji-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/14 10:22:30 by akenji-a          #+#    #+#             */
-/*   Updated: 2021/06/27 15:53:33 by akenji-a         ###   ########.fr       */
+/*   Updated: 2021/06/27 16:08:11 by akenji-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	char	*sub;
 	size_t	size;
