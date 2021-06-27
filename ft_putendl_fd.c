@@ -6,11 +6,11 @@
 /*   By: akenji-a <akenji-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/14 03:04:34 by akenji-a          #+#    #+#             */
-/*   Updated: 2021/06/27 14:39:39 by akenji-a         ###   ########.fr       */
+/*   Updated: 2021/06/27 15:36:28 by akenji-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h";
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

@@ -6,7 +6,7 @@
 /*   By: akenji-a <akenji-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/14 03:04:36 by akenji-a          #+#    #+#             */
-/*   Updated: 2021/06/27 14:41:51 by akenji-a         ###   ########.fr       */
+/*   Updated: 2021/06/27 15:36:55 by akenji-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putstr_fd(char *s, int fd)
 
 	i = 0;
 	if (!s)
-		return (0);
+		return ;
 	while (s[i])
 	{
 		ft_putchar_fd(s[i], fd);
